@@ -1,0 +1,30 @@
+{
+  "name": "yapdollar",
+  "version": "0.1.0",
+  "description": "Yapdollar in your browser!",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Milk-Cool/yapdollar.git"
+  },
+  "keywords": [
+    "yap",
+    "dollar",
+    "yapdollar",
+    "fiveish"
+  ],
+  "author": "Milk_Cool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Milk-Cool/yapdollar/issues"
+  },
+  "homepage": "https://github.com/Milk-Cool/yapdollar#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsdom": "^25.0.1"
+  }
+}
