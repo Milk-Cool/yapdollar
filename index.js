@@ -5,7 +5,7 @@ export async function getWikipediaPlainText(url) {
     const f = await fetch(url);
     const t = await f.text();
     const { window } = new JSDOM(t, { "contentType": "text/html" });
-    const body = window.document.querySelector("#bodyContent p:not(.mw-empty-elt)");
+    const body = window.document.querySelector(".mw-content-text p:not(.mw-empty-elt)");
     if(!body) return { "err": "Failed to load!" };
     return { "text": body.textContent.replace(/\[\d+\]/g, "") };
 }
